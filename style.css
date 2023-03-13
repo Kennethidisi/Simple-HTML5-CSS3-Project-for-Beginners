@@ -487,7 +487,7 @@ main{
     align-items: center;
     padding: 40px;
     background-color: whitesmoke;
-    padding-top: 180px;
+    padding-top: 50px;
     gap: 40px;
 }
 
@@ -805,6 +805,7 @@ main{
 .adress-div p{
     font-size: 14px;
     font-weight: 450;
+    text-align: center;
 }
 
 
