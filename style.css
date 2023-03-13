@@ -1,0 +1,832 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+header, main, footer{
+    width: 100%;
+}
+
+header{
+    height: 70px;
+    background-color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+header h4{
+    font-size: 17px;
+}
+
+header nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+header nav a:hover{
+    color: darkorange;
+}
+
+header button{
+    padding: 7px 18px;
+    border: 1px solid silver;
+    background-color: white;
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: darkorange;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+#banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: whitesmoke;
+}
+
+.h1-section{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.h1-section h1{
+    font-size: 120px;
+    color: orangered;
+}
+
+.h1-section button{
+    width: 370px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid royalblue;
+    transition: background-color .4s ease;
+    border-radius: 8px;
+}
+
+.h1-section button:hover{
+    background-color: green;
+    border: 1px solid green;
+
+}
+
+.banner-img{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.bigsneakers{
+    transform: rotate(20deg);
+}
+
+.smaller-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.smaller-img img{
+    width: 85px;
+    height: 70px;
+    border: 1px solid #666;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.smaller-img img:hover{
+    border: 1px solid darkorange;
+}
+
+
+#product{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+    background-color: white;
+    padding-top: 85px;
+}
+
+#product h1{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.img-container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container1 span{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-container1 span div{
+    width: 190px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid silver;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-container1 span div:hover{
+    border: 1px solid darkorange;
+}
+
+.img-box img{
+     width: 100px;
+     height: 80px;
+}
+
+.img-box h5{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+#order{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 85px;
+    gap: 80px;
+}
+
+
+#order h1{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.main-div{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 40px;
+    padding-right: 120px;
+}
+
+
+.left-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.left-div button{
+    width: 200px;
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #666;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
+
+.left-div button:hover{
+    background-color: greenyellow;
+}
+
+
+
+.right-div{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 35px;
+    gap: 20px;
+    border-radius: 12px;
+
+}
+
+.right-div h4{
+    color: darkorange;
+}
+
+.right-div p{
+    font-size: 14px;
+}
+
+.right-div button{
+    width: 120px;
+    padding: 10px;
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: white;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
+
+.right-div button:hover{
+    background-color: #666;
+    border: 1px solid #666;
+}
+
+
+#contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+
+#contact h1{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100; 
+}
+
+.contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.span1{
+    width: 45%;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.span1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.span2{
+    width: 35%;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.adress-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+}
+
+.adress-div h4{
+    color: darkorange;
+}
+
+.adress-div p{
+    font-size: 14px;
+    font-weight: 450;
+}
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p{
+    font-size: 11px;
+}
+
+
+
+
+/* Mobile styling starts here */
+@media(max-width:450px){
+
+      
+header, main, footer{
+    width: 100%;
+}
+
+header{
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    gap: 20px;
+    padding: 15px;
+    
+}
+
+header h4{
+    font-size: 17px;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header nav a:hover{
+    color: darkorange;
+}
+
+header button{
+    padding: 7px 18px;
+    border: 1px solid silver;
+    background-color: white;
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: darkorange;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+#banner{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: whitesmoke;
+    padding-top: 180px;
+    gap: 40px;
+}
+
+.h1-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.h1-section h1{
+    font-size: 75px;
+    color: orangered;
+}
+
+.h1-section button{
+    width: 225px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid royalblue;
+    transition: background-color .4s ease;
+    border-radius: 8px;
+}
+
+.h1-section button:hover{
+    background-color: green;
+    border: 1px solid green;
+
+}
+
+.banner-img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.bigsneakers{
+    width: 180px;
+    transform: rotate(20deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smaller-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.smaller-img img{
+    width: 65px;
+    height: 50px;
+    border: 1px solid #666;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.smaller-img img:hover{
+    border: 1px solid darkorange;
+}
+
+
+#product{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding-top: 30px;
+}
+
+#product h1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    color: darkorange;
+}
+
+.img-container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container1 span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.img-container1 span div{
+    width: 190px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid silver;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-container1 span div:hover{
+    border: 1px solid darkorange;
+}
+
+.img-box img{
+     width: 100px;
+     height: 80px;
+}
+
+.img-box h5{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+#order{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    background-color: whitesmoke;
+}
+
+
+#order h1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    color: darkorange;
+}
+
+.main-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 40px;
+    gap: 40px;
+}
+
+
+.left-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-left{
+    width: 150px;
+}
+
+.left-div button{
+    width: 200px;
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #666;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
+
+.left-div button:hover{
+    background-color: greenyellow;
+}
+
+
+
+.right-div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 35px;
+    gap: 20px;
+    border-radius: 12px;
+
+}
+
+.right-div h4{
+    color: darkorange;
+}
+
+.right-div p{
+    font-size: 14px;
+}
+
+.right-div button{
+    width: 120px;
+    padding: 10px;
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: white;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
+
+.right-div button:hover{
+    background-color: #666;
+    border: 1px solid #666;
+}
+
+
+#contact{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+
+#contact h1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100; 
+    color: darkorange;
+}
+
+.contact-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.span1{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.span1 img{
+    width: 100%;
+
+}
+
+.span2{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.adress-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+}
+
+.adress-div h4{
+    color: darkorange;
+}
+
+.adress-div p{
+    font-size: 14px;
+    font-weight: 450;
+}
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p{
+    font-size: 10px;
+    text-align: center;
+}
+
+}
+
+
